@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934C45121C194E2A00C9C756 /* XGShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C45111C194E2A00C9C756 /* XGShoppingCartCell.swift */; };
+		934C45141C195D5400C9C756 /* XGShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C45131C195D5400C9C756 /* XGShoppingCartViewController.swift */; };
+		934C45161C19705B00C9C756 /* XGOldPriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C45151C19705B00C9C756 /* XGOldPriceLabel.swift */; };
 		935D0F8D1C181381004203D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D0F8C1C181381004203D4 /* AppDelegate.swift */; };
 		935D0F921C181381004203D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935D0F901C181381004203D4 /* Main.storyboard */; };
 		935D0F941C181381004203D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935D0F931C181381004203D4 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		0666DB5ABDDC7D797BE5A875 /* Pods-ShoppingCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingCart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingCart/Pods-ShoppingCart.debug.xcconfig"; sourceTree = "<group>"; };
+		934C45111C194E2A00C9C756 /* XGShoppingCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XGShoppingCartCell.swift; sourceTree = "<group>"; };
+		934C45131C195D5400C9C756 /* XGShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XGShoppingCartViewController.swift; sourceTree = "<group>"; };
+		934C45151C19705B00C9C756 /* XGOldPriceLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XGOldPriceLabel.swift; sourceTree = "<group>"; };
 		935D0F891C181381004203D4 /* ShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935D0F8C1C181381004203D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935D0F911C181381004203D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				935D0FAE1C182434004203D4 /* XGGoodListViewController.swift */,
+				934C45131C195D5400C9C756 /* XGShoppingCartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				935D0FB01C182505004203D4 /* XGGoodListCell.swift */,
+				934C45151C19705B00C9C756 /* XGOldPriceLabel.swift */,
+				934C45111C194E2A00C9C756 /* XGShoppingCartCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934C45161C19705B00C9C756 /* XGOldPriceLabel.swift in Sources */,
 				935D0FAF1C182434004203D4 /* XGGoodListViewController.swift in Sources */,
+				934C45141C195D5400C9C756 /* XGShoppingCartViewController.swift in Sources */,
 				935D0F8D1C181381004203D4 /* AppDelegate.swift in Sources */,
+				934C45121C194E2A00C9C756 /* XGShoppingCartCell.swift in Sources */,
 				935D0FA81C181DB5004203D4 /* XGGoodModel.swift in Sources */,
 				935D0FB11C182505004203D4 /* XGGoodListCell.swift in Sources */,
 			);

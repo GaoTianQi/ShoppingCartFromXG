@@ -115,7 +115,7 @@ class XGGoodListViewController: UIViewController {
     lazy var cartButton: UIButton = {
         let carButton = UIButton(type: UIButtonType.Custom)
         carButton.setImage(UIImage(named: "button_cart"), forState: UIControlState.Normal)
-        carButton.addTarget(self, action: "didTappedCarButton:", forControlEvents: UIControlEvents.TouchUpInside)
+        carButton.addTarget(self, action:"didTappedCartButton:", forControlEvents: UIControlEvents.TouchUpInside)
         carButton.sizeToFit()
         
         return carButton
@@ -293,6 +293,24 @@ extension XGGoodListViewController {
             carAnimation.autoreverses = true
             cartButton.layer.addAnimation(carAnimation, forKey: nil)
         }
+    }
+}
+
+extension XGGoodListViewController {
+    /**
+    当点击了购物车触发，modal到购物车控制器
+    
+    - parameter button: 购物车按钮
+    */
+    @objc private func didTappedCartButton(button: UIButton) {
+        
+        let shoppingCartVC = XGShoppingCartViewController()
+        
+        // 传递商品模型数组
+        shoppingCartVC.addGoodArray = addGoodArray
+        
+        // 推出购物车控制器
+        presentViewController(UINavigationController(rootViewController: shoppingCartVC), animated: true, completion: nil)
     }
 }
 

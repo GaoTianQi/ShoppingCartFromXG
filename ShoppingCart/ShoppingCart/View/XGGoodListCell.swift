@@ -48,7 +48,7 @@ class XGGoodListCell: UITableViewCell {
         addCartButton.setTitle("购买", forState: UIControlState.Normal)
         
         // 添加按钮点击事件
-        addCartButton.addTarget(self, action: "didTappedAddCartButton", forControlEvents: UIControlEvents.TouchUpInside)
+        addCartButton.addTarget(self, action: "didTappedAddCartButton:", forControlEvents: UIControlEvents.TouchUpInside)
         
         return addCartButton
     }()

@@ -23,7 +23,7 @@ class XGGoodModel: NSObject {
     var desc: String?
     
     // 商品购买个数，默认0
-    var count: Int = 0
+    var count: Int = 1
     
     // 新价格
     var newPrice: String?
